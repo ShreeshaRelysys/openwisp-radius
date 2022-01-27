@@ -28,7 +28,7 @@ setup(
     description='OpenWISP Radius',
     long_description=open('README.rst').read(),
     url='https://openwisp.org',
-    download_url='https://github.com/openwisp/openwisp-radius/releases',
+    download_url='https://github.com/ShreeshaRelysys/openwisp-radius/releases',
     platforms=['Platform Independent'],
     keywords=['django', 'freeradius', 'networking', 'openwisp'],
     packages=find_packages(exclude=['tests*', 'docs*']),
@@ -39,13 +39,13 @@ setup(
         # Needed for the new authentication backend in openwisp-users
         # TODO: remove when the new version of openwisp-users is released
         (
-            'openwisp-users @ https://github.com/openwisp/openwisp-users/'
+            'openwisp-users @ https://github.com/ShreeshaRelysys/openwisp-users/'
             'tarball/master'
         ),
         # TODO: change this when next point version of openwisp-utils is released
         (
             'openwisp-utils[rest] @'
-            'https://github.com/openwisp/openwisp-utils/tarball/master'
+            'https://github.com/ShreeshaRelysys/openwisp-utils/tarball/master'
         ),
         'passlib~=1.7.1',
         'djangorestframework-link-header-pagination~=0.1.1',
